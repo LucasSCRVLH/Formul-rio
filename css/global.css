@@ -1,76 +1,144 @@
-.topo{
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    padding: 100px;
+body {
+    background: #ebbbbb;
+}
+
+body::before {
+    content: "";
     width: 100%;
-    height: 385px;
-
-}
-.main h1{
-    display: flex;
-    justify-content: center;
-   
-    
-}
-.topo h3{
-    text-align: justify;
-    display: flex;
-}
-.formulario{
-   padding: 30px;
-   
-    justify-content: center;
-        display: flex;
-
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: black;
 }
 
-.formulario{
-    flex-direction: column;
-   
+.container {
+    width: 736px;
+    margin: auto;
 }
-.main{
-    justify-content: center;
-    display: flex;
-   
-}
-.box{
-    padding: 30px;
-}
-.corpo{
-    background-color: rgb(255, 235, 235);
-   
-}
-.corpo_fino{
- background-color: white;
- width: 40%;
- border-radius: 20px;
- margin: -70px;
-    
-}
-.slogan h3{
-    color: rgb(49, 52, 240);
 
+header {
+    width: 320px;
+    margin-top: 40px;
 }
-.button:hover {
-    background-color: rgb(255, 0, 0);
-}
-.button {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    width: 50%;
-    background-color: #8aff46;
-    color: #fff;
+header h1 {
+    font-size: 36px;
     font-weight: bold;
-    cursor: pointer;
-    transition: background-color 1.0s;
-    border-radius: 20px;
+    margin-bottom: 24px;
+    color: white;
 }
-.final{
-    background-color: aqua;
+
+header p {
+    font-size: 16px;
+    line-height: 25px;
+    color: #42D3FF;
+}
+
+form {
+    margin-top: 38px;
+    background: #FFF;
+    border-radius: 8px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.fieldset_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset legend {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: black;
+    width: 100%;
+    border-bottom: 1px solid #e6e6ec;
+    padding-bottom: 16px;
+}
+
+.divs_input {
+    display: flex;
+    flex-direction: column;
+}
+
+.divs_input label,
+.div_checkbox label {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.divs_input label span {
+    margin-left: 8px;
+    font-size: 12px;
+    color: #949299;
+}
+
+.divs_input input,
+.divs_input textarea,
+.divs_input select {
+    background: #f5f5fa;
+    border: 1px solid #d7d7dd;
+    border-radius: 8px;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #6c6a71;
+}
+
+.divs-input textarea {
+    height: 160px;
+}
+
+.div_data {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.div_checkbox {
+    margin-top: 12px;
+    display: flex;
+    gap: 14px;
+}
+
+.div_checkbox label {
+    display: flex;
+    padding-top: 4px;
+}
+
+#input_checkbox {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    appearance: none;
+    border: 1px solid #42D3FF;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 64px;
+    border-top: 1px solid #d8d6d6;
+}
+
+.button {
+    height: 50px;
+    background: rgb(0, 0, 0);
+    border-radius: 8px;
+    border: 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: red;
 }
